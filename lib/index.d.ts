@@ -35,11 +35,11 @@ export interface StrategyOptionBase {
     scopeSeparator?: string;
     enableProof?: boolean;
     profileFields?: string[];
-    passReqToCallback?: false;
+    passReqToCallback?: boolean;
 }
 
 export interface StrategyOption extends StrategyOptionBase {
-    passReqToCallback?: false;
+    passReqToCallback?: boolean;
 }
 
 export interface StrategyOptionWithRequest extends StrategyOptionBase {
